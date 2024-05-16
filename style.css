@@ -1,0 +1,100 @@
+/*
+Colors used:
+Primary Color (light tan): #DEDDD8;
+Secondary Color (tan): #C9C2B0;
+Tertiary Color (green): #2D634B;
+Tertiary Color (purple): #AE9FC3;
+Tertiary Color (red): #E65B39;
+Text Color (dark gray): #252525;
+
+Fonts used::
+Headers: Libre Baskerville;
+Body: DM Sans;
+*/
+
+body {
+    background-color: #FFFFFF;
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    font-style: normal;
+    color: #252525;
+}
+
+h1 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 2.50em;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h2 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 2.25em;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h3 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 1.75em;
+    font-weight: 700;
+    font-style: normal;
+}
+
+img {
+    width: 100%;
+}
+
+a:active {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover,
+a:focus {
+    color: red;
+}
+
+.button {
+    display: inline-block;
+    background-color: #252525;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #252525;
+    transition: 0.2s opacity;
+}
+
+.button:hover {
+    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+    text-decoration: none;
+}
+
+.button:visited {
+    display: inline-block;
+    background-color: #252525;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #252525;
+    transition: 0.2s opacity;
+}
+
+.button.email {
+    background-color: transparent;
+    color: #252525;
+    text-transform: uppercase;
+    border: 2px solid #252525;
+}
+
+.butt.email:hover {
+     background-color: transparent;
+  color: #252525;
+}
