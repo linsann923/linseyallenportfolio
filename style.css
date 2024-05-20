@@ -12,8 +12,12 @@ Headers: Libre Baskerville;
 Body: DM Sans;
 */
 
+* {
+    box-sizing: border-box;
+  }
+
 body {
-    background-color: #FFFFFF;
+    background-color: #DEDDD8;
     font-family: "DM Sans", sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -41,6 +45,12 @@ h3 {
     font-size: 1.75em;
     font-weight: 700;
     font-style: normal;
+}
+
+header {
+    background-color: #DEDDD8;
+    padding: 10px;
+    text-align: center;
 }
 
 img {
@@ -92,9 +102,82 @@ a:focus {
     color: #252525;
     text-transform: uppercase;
     border: 2px solid #252525;
+    margin: 25px 0;
 }
 
 .butt.email:hover {
      background-color: transparent;
   color: #252525;
 }
+
+/* Layout styling */
+
+.container {
+    padding: 0 15px;
+  }
+
+  .row {
+    margin: 25px 0; 
+  }
+
+  #hero h1 {
+    text-align: center;
+  }
+
+  .logo {
+    max-width: 250px;
+    text-align: center;
+  }
+
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4a4a4a;
+  }
+
+nav > ul > li > a:visited {
+color: #252525;
+}
+
+nav > ul > li > a:hover {
+    color: #252525;
+}
+
+nav > ul > li > a:active {
+color: #252525;
+}
+
+#hero {
+    background-color: #DEDDD8;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+  }
+
+  #container {
+    display: inline-block;
+  }
+
+  #work {
+    background-color: #DEDDD8;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+  }
+
+  #contact {
+    background-color: #C9C2B0;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+  }
