@@ -3,94 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Story</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>My Story</title>
 </head>
-
 <body>
-
+<!--header-->
     <header>
-        <div>
-            <img src="img/logo/logo@1.png" class="logo" alt="Your Name">
+        <!--navigation-->
+        <div class="container">
+            <a href="index.html">
+                <img src="img/logo/logo@1.png" class="logo" alt="Your Name">
+            </a>
             <nav>
-                <ul>
+                <ul class="navigation">
                     <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li class="active"><a href="about.html">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-        </div>
+        </div> 
     </header>
   
-    <main id="work">
-        <div>
-            <div>
+    <main>
+        <div id="hero">
+            <div class="container">
                 <h1>About Me</h1>
+                <p>
+                    Lorem Ipsum dolor sit amet, consectur adipiscing
+                </p>
             </div>
         </div>
-        <div>
+        <div class="container">
             <div>
                 <picture>
                     <source srcset="img/about/img@2.png" media="(max-width:767px)">
                     <img src="img/about/img@2.png" alt="Profile Picture">
                 </picture>
                 <div>
-                    <div>
+                    <div class="column col-lg-7"> <!--Column One-->
                         <h2>My Story</h2>
                         <p>My original career trajectory was focused on preventing domestic violence, stalking, and sexual assault. While that is still my passion, I learned through hands on experience that immediate contact with such high intensity situations was too difficult for me.</p>
                         <p>When I found UX/UI design, I knew I had found the right career. With my background in marriage and family therapy, and my love of design, this field provided the perfect opportunity to learn incredible skills and use them for good.</p>
                         <p>My journey has equipped me with a diverse skill set. I am incredibly empathetic and highly logical. I am qualified to speak and design on users' behalf.</p>
                         <a href="files/cv.pdf" target="_blank" class="button">Download My Resume</a>
                     </div>
-                    <div>
+                    
+                    <div class="column col-lg-8">  <!--Column Two-->
                         <h2>Skills &amp; Tools</h2>
-                        <div>
-                            <div>
-                                <h3>Skills</h3>
-                                <ul>
-                                    <li>UX & UI Design</li>
-                                    <li>User Research</li>
-                                    <li>UX Writing</li>
-                                    <li>Front End Development</li>
-                                    <li>Empathetic Listening</li>
-                                    <li>Communication</li>
-                                    <li>Teamwork</li>
-                                    <li>Presenting</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h3>Tools</h3>
-                                <ul>
-                                    <li>Figma</li>
-                                    <li>Adobe Creative Cloud</li>
-                                    <li>Github</li>
-                                </ul>
-                            </div>
+                        <div class="column col-md-6">
+                            <h3>Skills</h3>
+                            <ul>
+                                <li>UX & UI Design</li>
+                                <li>User Research</li>
+                                <li>UX Writing</li>
+                                <li>Front End Development</li>
+                                <li>Empathetic Listening</li>
+                                <li>Communication</li>
+                                <li>Teamwork</li>
+                                <li>Presenting</li>
+                            </ul>
+                        </div>
+                        <div class="column col-md-5 col-lg-5"> <!--Column two, row two-->
+                            <h3>Tools</h3>
+                            <ul>
+                                <li>Figma</li>
+                                <li>Adobe Creative Cloud</li>
+                                <li>Github</li>
+                            </ul>
+                        </div>
                         </div>
                     </div>
+
                 </div>
             </div>
-        </div>
     </main>
+
+<!--Footer-->
     <footer id="contact">
-        <div>
+        <div class="container">
             <h2>Get in Touch</h2>
-            <p>Call to action, 2-3 sentences. Messsage me at: <a href="tel:+123456789">+123 456789</a></p>
+            <p>
+                Call to action, 2-3 sentences. Messsage me at: <a href="tel:+123456789">+123 456789</a>
+            </p>
             <div>
-                <a href="mailto:myemail@gmail.com" class="button email">Email Me</a>
+                <a href="mailto:myemail@gmail.com" class="button contact">Email Me</a>
             </div>
-            <div>
-                <a href="https://www.linkedin.com/in/linsey-allen-997394227/" target="_blank" rel="noreferrer">
-                    <img src="img/logo/linkinlogo@1.png" alt="Linkedin Logo" class="logo">
-                </a>
-            </div>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/linsey-allen-997394227/" target="_blank" rel="noreferrer">
+                        <img src="img/logo/linkinlogo@1.png" alt="Linkedin Logo" class="logo">
+                    </a>
+                </li>
+            </ul>
             <p>copyright Linsey Allen 2024-2025</p>
         </div>
     </footer>
