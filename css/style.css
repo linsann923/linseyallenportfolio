@@ -1,0 +1,309 @@
+/*
+Colors used:
+Primary Color (light tan): #DEDDD8;
+Secondary Color (tan): #C9C2B0;
+Tertiary Color (green): #2D634B;
+Tertiary Color (purple): #AE9FC3;
+Tertiary Color (red): #E65B39;
+Text Color (dark gray): #252525;
+
+Fonts used::
+Headers: Libre Baskerville;
+Body: DM Sans;
+*/
+
+/*sets the defaut width of an element to include the padding and the border via the box-sizing property and border-box values*/
+* {
+    box-sizing: border-box;
+  }
+
+/*default body settings*/
+body {
+    background-color: #DEDDD8;
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    font-style: normal;
+    color: #252525;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+
+h1 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 2.50em;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h2 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 2.25em;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h3 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 1.75em;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*This sets images to full-width*/
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/*links*/
+a:active {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+/*Pseudo classes for accessibility across the web*/
+a:hover,
+a:focus {
+    color: red;
+}
+
+/*Css code for button class*/
+.button {
+    display: inline-block;
+    background-color: #252525;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #252525;
+    transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button:visited {
+  display: inline-block;
+  background-color: #252525;
+  color: #FFFFFF;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #252525;
+  transition: 0.2s opacity;
+}
+
+
+/*buttons rules for mail to button*/
+.button.contact {
+  background-color: transparent;
+    color: #252525;
+    text-transform: uppercase;
+    border: 2px solid #252525;
+    margin: 25px 0;
+}
+
+.button.contact:hover {
+     background-color: transparent;
+  color: #252525;
+}
+
+/*Style the page sections*/
+/*header element*/
+header {
+  background-color: #DEDDD8;
+  padding: 10px;
+  text-align: center;
+}
+
+/*logo style*/
+header .logo {
+  max-width: 75px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  max-width: 75px;
+  text-align: center;
+}
+
+/*Navigation Stylings*/
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+nav > ul > li {
+    display: inline-block;
+  }
+
+nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4a4a4a;
+  }
+
+nav > ul > li > a:visited {
+color: #252525;
+}
+
+nav > ul > li > a:hover {
+    color: #252525;
+}
+
+nav > ul > li > a:active {
+color: #252525;
+}
+
+#hero {
+    background-color: #DEDDD8;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+#hero h1 {
+    text-align: center;
+  }
+  
+
+  #work {
+    background-color: #DEDDD8;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+  }
+
+  #contact {
+    background-color: #C9C2B0;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+  }
+
+  /*social icons*/
+
+  /*Layout Styling*/
+
+.container {
+  padding: 0 15px;
+}
+
+#container {
+  display: inline-block;
+}
+
+.row {
+  margin: 25px 0; 
+}
+
+/*SVG Animations*/
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+/*single line...
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+*/
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/*Media Queries*/
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+
+/*Small Screen Stylilng*/
+@media only screen and (min-width: 640px) {
+    header {
+      text-align: unset;
+      padding: 20px 0 13px;
+    }
+
+    nav {
+      width: auto;
+      float: right;
+      margin-top: 4px;
+    }
+
+    #hero span {
+      display: block;
+    }
+
+    .col-md-6 {
+      width: 50%;
+    }
+  }
+
+  /*Large Screens*/
+  @media only screen and (min-width: 1024px) {
+    .col-md-6 {
+      width: 50%;
+    }
+
+    [class*="col-"] {
+      float: left;
+      padding: 10px;
+    }
+  }
+
+  /*Extra Large Screens*/
+  @media only screen and (min-width: 1440px) {
+    .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
