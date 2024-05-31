@@ -21,7 +21,7 @@ Body: DM Sans;
 body {
     background-color: #DEDDD8;
     font-family: "DM Sans", sans-serif;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 400;
     line-height: 1.6;
     font-style: normal;
@@ -210,6 +210,10 @@ color: #252525;
 
 .row {
   margin: 25px 0; 
+}
+
+.introduction {
+  display: inline-block;
 }
 
 /*SVG Animations*/
