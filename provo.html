@@ -3,26 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linsey Allen Portfolio</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Linsey Allen Portfolio</title>
 </head>
 
 <body>
 
     <header>
-        <div>
-            <img src="img/logo/logo@1.png" class="logo" alt="Your Name"> 
-            <a href="./index.html"></a>
+        <!--navigation-->
+        <div class="container">
+            <a href="index.html">
+            <img src="img/logo/logo@1.png" class="logo" alt="Your Name">
+            </a>
             <nav>
-                <ul>
-                    <li><a href="index.html">Work</a></li>
+                <ul class="navigation">
+                    <li class="active"><a href="index.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -34,11 +39,11 @@
 
  <!--hero section-->
  <div id="work">
-    <div>
+    <div class="container">
         <h1>02 | Provo Recreation Center App</h1>
         <p>The Provo Recreation App is primarily a scheduling tool that caters to children, adults, seniors, and families. This case study details my first experience of detailing solutions to fix an underdeveloped app.</p>
     </div>
-    <div>
+    <div class="container">
         <picture>
             <source srcset="img/provo/thumb@1.png" media="(max-width:767px)">
             <img src="img/provo/thumb@2.png" alt="thumbnail">
@@ -47,20 +52,28 @@
 </div>
 
 <!--Introduction-->
-<div>
-    <div>
-        <h2>Context</h2>
-        <p>It was my first week of UI/UX bootcamp, and I wanted to take up a passion project as a problem solving exercise. I am enthusiastic about my local community and wanted to solve the booking issues in my local rec center's app.</p>
-        <p>The Provo Recreation Center is highly reputable and caters to children, adults, seniors, families, even animals (enjoy this photo of my dog at their puppy pool party)! The amenities and services are top-notch, especially the child watch care services! For very cheap, mothers can sign up for hours of babysitting while they attend fitness classes and community events. However, the quality of the services are not reflected in the iPhone version of the scheduling app.</p>
-        <picture> 
-            <source srcset="img/provo/puppy@1.png" media="(max-width:767px)">
-            <img src="img/provo/puppy@2.png" alt="Picture of Dog">
-        </picture>
+<div class="container">
+    <div class="row">
+        <div class="column col-md-6 col-lg-7">
+            <h2>Context</h2>
+        <p>
+            It was my first week of UI/UX bootcamp, and I wanted to take up a passion project as a problem solving exercise. I am enthusiastic about my local community and wanted to solve the booking issues in my local rec center's app.
+        </p>
+        <p>
+            The Provo Recreation Center is highly reputable and caters to children, adults, seniors, families, even animals (enjoy this photo of my dog at their puppy pool party)! The amenities and services are top-notch, especially the child watch care services! For very cheap, mothers can sign up for hours of babysitting while they attend fitness classes and community events. However, the quality of the services are not reflected in the iPhone version of the scheduling app.
+        </p>
+        </div>
+        <div class="column col-md-6 col-lg-7">
+            <picture> 
+                <source srcset="img/provo/puppy@1.png" media="(max-width:767px)">
+                <img src="img/provo/puppy@2.png" alt="Picture of Dog">
+            </picture>
+        </div>
     </div>
 </div>
 
 <!--Problem Section-->
-<div>
+<div class="container">
     <div>
         <h2>The Problem?</h2>
         <p>The child watch book system is hard to find and overwhelming. See for yourself! Try reading the info paragraph from the reservation page.</p>
@@ -72,7 +85,7 @@
 </div>
 
 <!--User Research Section-->
-<div>
+<div class="container">
     <div>
         <h2>User Research</h2>
         <p>I texted, called, and face-timed with friends and acquaintances. As I spoke with these users, people consistently expressed a general dislike for the current app. Each interviewee provided good insights into the challenges they faced as a Provo Rec App user.</p>
@@ -86,7 +99,7 @@
 </div>
 
 <!--User Flows and Wireframes-->
-<div>
+<div class="container">
     <div>
         <h2>User Flow</h2>
         <p>My first hurdle was to learn how to conceptualize the route the user should take. I felt that key check points were missing in the existing design, and I eventually decided to add a home page and an intake process for first time users. </p>
@@ -109,7 +122,7 @@
 </div>
 
 <!--Elements and Solutions-->
-<div>
+<div class="container">
     <div>
         <h2>Elements and Solutions</h2>
         <p>It initially felt so complex to put together, but I found simple UI patterns to create the right experience. Some key additions included:</p>
@@ -121,7 +134,7 @@
 </div>
 
 <!--Final Look-->
-<div>
+<div class="container">
     <div>
         <h2>Final Look</h2>
         <p>I wanted a design that felt family friendly, fun, and clean while simultaneously reflecting the outdoors of Provo, Utah. I changed the original colors into a teal palette. All the buttons had green elements. All icons are dark and simple. I kept the nature theme consistent throughout.</p>
@@ -133,7 +146,7 @@
 </div>
 
 <!--Conclusion-->
-<div>
+<div class="container">
     <div>
         <h2>Conclusion</h2>
         <p>My first experience with the UX design process was about learning how to take something complicated and simplify it. It is one thing to study UX, another thing entirely to practice it. This was not a perfect process, but it was a valuable one!
@@ -152,19 +165,24 @@
 </div>
 </main>
 
-<footer id="contact">
-    <div>
+ <!--footer-->
+ <footer id="contact">
+    <div class="container">
         <h2>Get in Touch</h2>
-        <p>Call to action, 2-3 sentences. Messsage me at: <a href="tel:+123456789">+123 456789</a></p>
+        <p>Call to action, 2-3 sentences</p>
+        <p>Messsage me at: <a href="tel:+123456789">+123 456789</a></p>
+        <p>Prefer sending an email?</p>
         <div>
-            <a href="mailto:myemail@gmail.com" class="button email">Email Me</a>
+            <a href="mailto:myemail@gmail.com" class="button contact">Email Me</a>
         </div>
-        <div>
-            <a href="https://www.linkedin.com/in/linsey-allen-997394227/" target="_blank" rel="noreferrer">
-                <img src="img/logo/linkinlogo@1.png" alt="Linkedin Logo" class="logo">
-            </a>
-        </div>
-        <p>copyright Linsey Allen 2024-2025</p>
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/linsey-allen-997394227/" target="_blank" rel="noreferrer">
+                    <img src="img/logo/linkinlogo@1.png" alt="Linkedin Logo" class="logo">
+                </a>
+            </li>
+        </ul>
+        <p>copyright Linsey Allen 2024</p>
     </div>
 </footer>
 
