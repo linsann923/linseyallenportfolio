@@ -14,25 +14,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/e3605ac51d.js" crossorigin="anonymous"></script>
+
     <title>My Story</title>
 </head>
 <body>
 <!--header-->
-    <header>
-        <!--navigation-->
-        <div class="container">
+<header>
+    <!--navigation-->
+    <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
             <a href="index.html">
                 <img src="img/logo/logo@1.png" class="logo" alt="Your Name">
-            </a>
-            <nav>
-                <ul class="navigation">
-                    <li><a href="index.html">Work</a></li>
-                    <li class="active"><a href="about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div> 
-    </header>
+                </a>
+                <nav>
+                    <ul class="navigation">
+                        <li class="active"><a href="index.html">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+        </div>
+    </div>
+</header>
   
     <main class>
         <div id="hero">
@@ -109,5 +114,8 @@
             <p>copyright Linsey Allen 2024-2025</p>
         </div>
     </footer>
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
