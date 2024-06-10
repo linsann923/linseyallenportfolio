@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/e3605ac51d.js" crossorigin="anonymous"></script>
+
     <title>Linsey Allen Portfolio</title>
 </head>
 
@@ -22,16 +24,19 @@
     <header>
         <!--navigation-->
         <div class="container">
-            <a href="index.html">
-            <img src="img/logo/logo@1.png" class="logo" alt="Your Name">
-            </a>
-            <nav>
-                <ul class="navigation">
-                    <li class="active"><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+			<div class="navtoggle" id="myNavtoggle">
+                <a href="index.html">
+                    <img src="img/logo/logo@1.png" class="logo" alt="Your Name">
+                    </a>
+                    <nav>
+                        <ul class="navigation">
+                            <li class="active"><a href="index.html">Work</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                        </ul>
+                    </nav>
+            </div>
         </div>
     </header>
 
@@ -209,6 +214,9 @@
         <p>copyright Linsey Allen 2024</p>
     </div>
 </footer>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/scripts.js"></script>
 
 </body>
 </html>
