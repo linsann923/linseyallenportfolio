@@ -20,7 +20,7 @@ Body: DM Sans;
 /*default body settings*/
 body {
     font-family: "DM Sans", sans-serif;
-    background-color: #DEDDD8;
+    background-color: #ECECEC;
     font-size: 22px;
     font-weight: 400;
     line-height: 1.6;
@@ -126,7 +126,7 @@ a:focus {
 /*Style the page sections*/
 /*header element*/
 header {
-  background-color: #FFFFFF;
+  background-color: #fff;
 }
 
 main {
@@ -203,7 +203,7 @@ color: #252525;
 }
 
 #hero {
-    background-color: #DEDDD8;
+    background-color: #ECECEC;
     padding: 20px 0;
     display: inline-block;
     width: 100%;
@@ -212,7 +212,7 @@ color: #252525;
   
 
   #work {
-    background-color: #DEDDD8;
+    background-color: #ECECEC;
     padding: 20px 0;
     display: inline-block;
     width: 100%;
