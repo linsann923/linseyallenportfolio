@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/e3605ac51d.js" crossorigin="anonymous"></script>
+
+    <title>Linsey Allen Portfolio</title>
+</head>
+
+<body>
+
+    <header>
+        <!--navigation-->
+        <div class="container">
+			<div class="navtoggle" id="myNavtoggle">
+                <a href="index.html">
+                    <img src="img/logo/logo@1.png" class="logo" alt="Your Name">
+                    </a>
+                    <nav>
+                        <ul class="navigation">
+                            <li class="active"><a href="index.html">Work</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                        </ul>
+                    </nav>
+            </div>
+        </div>
+    </header>
+
+<main>
+
+ <!--hero section-->
+ <div id="work">
+    <div class="container">
+        <h1>03 | Material Girl App</h1>
+        <p>Material Girl is an app designed to help users plan and explore crafting ideas. I ideated the app as a personal exercise.</p>
+    </div>
+    <div class="container">
+        <picture>
+            <source srcset="img/girl/thumb@1.png" media="(max-width:767px)">
+            <img src="img/girl/thumb@2.png" alt="thumbnail">
+          </picture>
+    </div>
+</div>
+
+<!--Introduction-->
+<div class="container">
+    <div class="row">
+        <div class="column col-md-6 col-lg-7">
+            <h2>Context</h2>
+        <p>
+            I love crafting. If I was left on a deserted island and could only do one thing for the rest of my life, it would be crafting. I can't wait to retire so I can craft all day, everyday. You get the picture! Yet, as a crafter, my notes and photo apps are bursting with random screenshots and scattered ideas of past, present, and future projects. The inability to consolidate my projects into one place severely clutters my phone. I also get tired of manually searching for materials across multiple search engines. I wanted to create an app where all my crafting ideas and thoughts could be organized into one place.Around this time in my CareerFoundry program, I was tasked with creating an original native app that adhered to the iOS and Material design guidelines with an accessible and intuitive UI. Thus, Material Girl was born.
+        </p>
+        </div>
+        <div class="column col-md-6 col-lg-7">
+            <picture> 
+                <source srcset="img/girl/mock1@1.png" media="(max-width:767px)">
+                <img src="img/girl/mock1@2.png.png" alt="Picture of Dog">
+            </picture>
+        </div>
+    </div>
+</div>
+
+<!--Problem Section-->
+<div class="container">
+    <div>
+        <h2>Approach</h2>
+        <h3>Industry Standards</h3>
+        <p>First, I needed to become familiar with the expected UI patterns in visual discovery apps. Pinterest was my first stop because of how well it compartmentalizes creative ideas. I drew a lot of inspiration from the organizational patterns of Pinterest and the versatility of its image search engine. But to best understand the current capabilities of advanced image recognition and its UI patterns, I decided to draw my inspiration from Google instead. This was because Google's search engine features better matched the function of my app. I didn't just want results to include matching images. I needed the results to break down materials in the photo. </p>
+        <p>After reviewing Google's flow, there were two key functions I applied to my app: (1) The image search flow was accessed through a camera lens icon that when tapped would automatically pull up users' camera. (2) The ability of users to crop the search focus to a certain area of the picture, as well as add text to further narrow the results.</p>
+    </div>
+</div>
+
+<!--Wireframes-->
+<div class="container">
+    <div>
+        <h3>Wireframes</h3>
+        <p>Second, I continuously tested my wireframes usability, which proved to be the most valuable part of my design process. I learned for myself that it is not possible to practice good UX/UI design if one does not prioritize the user. While designing the app, I became preoccupied in what looked aesthetically pleasing, not what was most effective for the user. For example, at one point, the different line weights of the initial search bar and search icon bothered me. So, I removed the search icon all together because I thought it made the screen look cleaner. But, when testers had to user the search by image feature, some were confused as to why I put a camera icon and not a search icon. They then became stuck at that point of the prototype. Because the standard UI practice is to put the search icon on the left and the camera icon on the right, it was a big design error on my part to not include what the users would recognize. In the end, my prioritization of visual design over the user made the user less effective.</p>
+    </div>
+    <div>
+        <picture>
+            <source srcset="img/girl/wire@1.png" media="(max-width:767px)">
+            <img src="img/girl/wire@2.png" alt="">
+        </picture>
+    </div>
+</div>
+
+<!--Final Look-->
+<div class="container">
+    <div>
+        <h2>Final Look</h2>
+        <p>The purpose of this case study was to learn about and adhere to iOS and Material design guidelines.  It was helpful practice to create the two versions side by side. In terms of the look, it was most important to me to use a color palette that was muted enough to complement colorful imagery. Here is the final look!</p>
+        <picture>
+            <source srcset="img/girl/screens@1.png" media="(max-width:767px)">
+            <img src="img/girl/screens@2.png" alt="Final Screens">
+        </picture>
+    </div>
+</div>
+
+<!--Conclusion-->
+<div class="container">
+    <h3>Usability Task</h3>
+    <a href="https://www.figma.com/proto/yDvXlpdrgyFjH5Eevt22w7/Portfolio---Material-Girl?type=design&node-id=2-4058&t=n1eNbsvwbM3sSOPK-1&scaling=scale-down&page-id=2%3A4047&mode=design" class="button">View IOS Prototype</a>
+    <a href="https://www.figma.com/proto/yDvXlpdrgyFjH5Eevt22w7/Portfolio---Material-Girl?type=design&node-id=2-5244&t=0cgUg4ONUAXbnymV-1&scaling=scale-down&page-id=2%3A5231&mode=design" class="button">View Android Prototype</a>
+    <ol>
+        <li>Login</li>
+        <li>Go to your profile</li>
+        <li>Add a sewing new project</li>
+        <li>Add a denim coat image</li>
+        <li>Search for material from that image</li>
+        <li>Tap into one of the result items</li>
+        <li>Add items to denim chore coat project</li>
+    </ol>
+</div>
+</main>
+
+ <!--footer-->
+ <footer id="contact">
+    <div class="container">
+        <h2>Get in Touch</h2>
+        <h4>Let's make something great together!</h4>
+        <p>Messsage me at: <a href="tel:+123456789">+123 456789</a></p>
+        <p>Prefer sending an email?</p>
+        <div>
+            <a href="mailto:myemail@gmail.com" class="button contact">Email Me</a>
+        </div>
+        <a href="https://www.linkedin.com/in/linsey-allen-997394227/" target="_blank" rel="noreferrer">
+            <img src="img/logo/linkinlogo@1.png" alt="Linkedin Logo" class="logo">
+        </a>
+        <p>copyright Linsey Allen 2024</p>
+    </div>
+</footer>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
